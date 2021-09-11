@@ -95,3 +95,21 @@ please define all necessary parameter in the script such as:
 - sma_inverter_ip
 - sma_inverter_port if needed
 - and change hostname if script is not run on gateway it self.
+
+
+## Bioimpedance analyzer with AD5933 example
+### RPI 2 - 4 /zero
+#### this code will do:
+1. Communicate with an AD5933 impedance analyzer.
+2. expand measurement channels up to 32 via two 16 channel MUX.
+3. interactive dashboard written in Node-Red.
+4. collected data can be stored locally on a USB stick or on the platform via MQTT
+5. error checking before measurement included
+6. multiple setting options including calibration settings
+7. sends data to the server where it can be displayed e.g. in Grafana
+8. and much more
+
+node.js Modules "Node-Red"
+npm Modules "i2c-bus".
+This script is ment to be run on the gateway it self, but you can change it.
+
